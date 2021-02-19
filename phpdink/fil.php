@@ -1,0 +1,4 @@
+<?php
+readfile ("fil.html");
+
+?>

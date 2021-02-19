@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Services</li>
+            <li>contact us</li>
+            <li>about us</li>
+            <li>email us</li>
+        </ul>
+    </div>
+    <div class="container">
+        another conatiner
+    </div>
+    <script>
+        //by doing this you are putting directly your code into javascript if you want to correct your code you can do it in java script
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        //you can use nav.innerhtml
+        //<li>dynamic element</Li>
+        let container=document.getElementsByClassName('container');
+        console.log(container)
+
+        // let sel = document.querySelector('.container');
+        // console.log("selector returns",sel);
+
+        
+        // let sel = document.querySelector('#nav>li');
+        // console.log("selector returns",sel);
+
+        
+        // let sel = document.querySelectorAll('.container');
+        // console.log("selector returns",sel);
+
+        
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("selector returns",sel);
+         //you can use sel[0].innerhtml="inserted"
+        //<li>dynamic element</Li>
+        
+    </script>
+</body>
+</html>
